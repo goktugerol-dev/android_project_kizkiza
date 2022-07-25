@@ -13,15 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.KizKiza"
         tools:targetApi="31">
+
+        <activity android:name="com.legacycode.kizkiza.activities.SignUpActivity"
+            android:windowSoftInputMode="adjustResize"/>
+
         <activity
-            android:name=".MainActivity"
+            android:name="com.legacycode.kizkiza.activities.SignInActivity"
+            android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+
         </activity>
+
+        <activity android:name=".MainActivity"/>
+
     </application>
 
 </manifest>
