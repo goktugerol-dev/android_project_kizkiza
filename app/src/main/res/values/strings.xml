@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Kiz Kiza</string>
+    <string name="tekrar_hos_geldiniz">Tekrar Hoşgeldiniz!</string>
+    <string name="e_mail_tel">E-Mail / Tel</string>
+    <string name="ifre">Şifre</string>
+    <string name="devam_etmek_i_in_giri_yap">Devam etmek için, giriş yap</string>
 </resources>

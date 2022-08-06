@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="none"
     tools:context=".activities.SignInActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:text="@string/tekrar_hos_geldiniz"
+            android:textColor="@color/primary_color"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="@string/devam_etmek_i_in_giri_yap"
+            android:textColor="@color/secondary_color"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/input_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/e_mail_tel"
+            android:textSize="@dimen/_13ssp"
+            android:textColorHint="@color/red_diablo_lambo"
+            android:textStyle="bold"
+            android:imeOptions="actionNext"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:autofillHints="emailAddress"/>
+
+        <EditText
+            android:id="@+id/input_pasword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_46sdp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/ifre"
+            android:textSize="@dimen/_13ssp"
+            android:textColorHint="@color/red_diablo_lambo"
+            android:textStyle="bold"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingEnd="@dimen/_16sdp"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
