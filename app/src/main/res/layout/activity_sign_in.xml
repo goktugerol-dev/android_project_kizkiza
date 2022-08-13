@@ -8,6 +8,7 @@
     android:overScrollMode="never"
     android:padding="@dimen/_24sdp"
     android:scrollbars="none"
+    android:background="@drawable/background1"
     tools:context=".activities.SignInActivity">
 
     <LinearLayout
@@ -21,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_40sdp"
             android:text="@string/tekrar_hos_geldiniz"
-            android:textColor="@color/primary_color"
+            android:textColor="@color/red_diablo_lambo"
             android:textSize="@dimen/_18ssp"
             android:textStyle="bold"/>
 
@@ -43,7 +44,7 @@
             android:background="@drawable/background_input"
             android:hint="@string/e_mail_tel"
             android:textSize="@dimen/_13ssp"
-            android:textColorHint="@color/red_diablo_lambo"
+            android:textColorHint="@color/red_fire"
             android:textStyle="bold"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
@@ -61,7 +62,7 @@
             android:background="@drawable/background_input"
             android:hint="@string/ifre"
             android:textSize="@dimen/_13ssp"
-            android:textColorHint="@color/red_diablo_lambo"
+            android:textColorHint="@color/red_fire"
             android:textStyle="bold"
             android:imeOptions="actionDone"
             android:importantForAutofill="no"
