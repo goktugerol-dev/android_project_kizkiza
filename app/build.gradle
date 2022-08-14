@@ -42,7 +42,7 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.8.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0' //new version
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
@@ -59,5 +59,40 @@ dependencies {
 
     // Facebook SDK to add login option
     implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+
+    // Implementing Google Play Services
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+
+    /* IMPLEMENTING FIREBASE DEPENDENCIES FOR BACKEND DEVELOPMENT */
+
+    // Firebase Core
+    implementation "com.google.firebase:firebase-core:21.1.0"
+
+    // Firebase Authentication
+    /* backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to app.
+    It supports authentication using passwords, phone numbers, popular federated identity providers
+    like Google, Facebook and Twitter etc */
+
+    implementation "com.google.firebase:firebase-auth:21.0.7"
+
+    // Firebase Realtime Database
+    implementation "com.google.firebase:firebase-database:20.0.5"
+
+    // Firebase - Firestore Cloud
+    implementation "com.google.firebase:firebase-firestore:24.2.2"
+
+    // Firebase - Cloud Storage
+    implementation "com.google.firebase:firebase-storage:20.0.1"
+
+    // Firebase Cloud Messaging (FCM)
+    implementation "com.google.firebase:firebase-messaging:23.0.7"
+
+    // Firebase Cloud Functions
+    implementation "https://firebase.google.com/docs/functions/"
+
+    // Firebase Crashlytics
+    // Track, prioritise, and fix stability issues to improve the app quality.
+    implementation "com.crashlytics.sdk.android:crashlytics:17.2.2"
+    implementation "com.google.firebase:firebase-crash:16.2.1" //Crash Reporting
 
 }
